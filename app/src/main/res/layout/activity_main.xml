@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_bg_color">
+
+    <include
+        android:id="@+id/include_head"
+        layout="@layout/head_layout" />
+
+    <com.li.test.view.xlistview.XListView
+        android:id="@+id/reserve_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/include_head"
+        android:background="#ffffffff"
+        android:divider="@color/material_bg_color"
+        android:dividerHeight="0.4dp"></com.li.test.view.xlistview.XListView>
+
+    <RelativeLayout
+        android:id="@+id/revelance_null_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_bg_color"
+        android:layout_below="@id/include_head"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/relevance_content_null" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/add_goods_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/add_order_img_selector" />
+
+</RelativeLayout>

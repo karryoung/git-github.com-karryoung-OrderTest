@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/choice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/choice_rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.li.test.view.timePicker.WheelView
+                android:id="@+id/choice_wv_layout1"
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.li.test.view.timePicker.WheelView
+                android:id="@+id/choice_wv_layout2"
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.li.test.view.timePicker.WheelView
+                android:id="@+id/choice_wv_layout3"
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.li.test.view.timePicker.WheelView
+                android:id="@+id/choice_wv_layout4"
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.li.test.view.timePicker.WheelView
+                android:id="@+id/choice_wv_layout5"
+                android:layout_width="100dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choice_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#e68a1d"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

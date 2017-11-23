@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myTextStyleMain">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/combo_select_text_color</item>
+    </style>
+
+    <style name="myTipDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 设置页面弹出样式 -->
+    <style name="set_dialog_style" parent="@style/AppTheme">
+        <item name="@android:windowEnterAnimation">@anim/dialog_open_anim</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_close_anim</item>
+        <item name="android:windowFrame">@null</item><!-- 外面框 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item><!--是否半透明-->
+    </style>
+    <style name="myTextStyleVice">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/combo_select_text_color</item>
+        <item name="android:textColorHint">@color/material_view_color</item>
+    </style>
+</resources>

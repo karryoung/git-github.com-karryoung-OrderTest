@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="3dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <com.li.test.view.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/head_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back"/>
+        </com.li.test.view.RippleView>
+
+        <com.li.test.view.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_head_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </com.li.test.view.RippleView>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:textColor="@color/filtrate_title_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

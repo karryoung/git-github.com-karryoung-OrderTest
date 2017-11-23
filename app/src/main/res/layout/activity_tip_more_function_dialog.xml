@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:background="@drawable/tip_dialog_bg_sharp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_more_function_strings_title"
+        android:padding="15dp"
+        android:textColor="@color/gold_color"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gold_color"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tip_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:text="@string/tip_more_function_strings_del"
+        android:textColor="@color/combo_select_text_color"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/cutting_line_color"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/tip_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/tip_more_function_strings_cancel"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/combo_select_text_color"
+        android:textSize="16sp" />
+</LinearLayout>

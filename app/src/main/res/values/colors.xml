@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_background">#423A34</color>
+    <color name="white">#ffffff</color>
+    <color name="rippelColor">#cccccc</color>
+    <color name="material_bg_color">#f1f1f1</color>
+    <color name="filtrate_title_color">#333333</color>
+    <color name="layout_background">#f5f5f5</color>
+    <color name="combo_select_text_color">#474747</color>
+    <color name="no_revation_color">#FD6100</color>
+    <color name="material_view_color">#cccccc</color>
+    <color name="is_revation_color">#019108</color>
+    <color name="black">#000000</color>
+    <color name="gold_color">#e58918</color>
+    <color name="cutting_line_color">#cccccc</color>
+    <color name="paying_off_select">#E68A1D</color>
+    <color name="tab_tv_selector">#E68B1C</color>
+    <color name="combo_price_tv">#474747</color>
+</resources>

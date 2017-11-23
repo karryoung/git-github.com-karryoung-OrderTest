@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/layout_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/add_order_head"
+        layout="@layout/head_layout" />
+
+    <com.li.test.view.MyScrollView
+        android:id="@+id/add_order_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                android:id="@+id/add_order_name_layout"
+                layout="@layout/layout_left_text_right_input" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/material_view_color" />
+
+            <include
+                android:id="@+id/add_order_phone_layout"
+                layout="@layout/layout_left_text_right_input" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/material_view_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/house_area_tv"
+                    style="@style/myTextStyleMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/house_area_tv" />
+
+                <EditText
+                    android:id="@+id/add_order_area_et"
+                    style="@style/myTextStyleVice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/house_area_tv"
+                    android:layout_marginTop="14dp"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="@string/add_order_area_edit"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="10"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/material_view_color" />
+
+            <include
+                android:id="@+id/add_order_house_type"
+                layout="@layout/scent_item_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/material_view_color" />
+
+            <include
+                android:id="@+id/add_order_type"
+                layout="@layout/scent_item_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/material_view_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/layout_background" />
+
+            <include
+                android:id="@+id/add_order_zone"
+                layout="@layout/scent_item_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/material_view_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/add_adress_tv"
+                    style="@style/myTextStyleMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_order_adress_tv" />
+
+                <EditText
+                    android:id="@+id/add_adress_edit"
+                    style="@style/myTextStyleVice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add_adress_tv"
+                    android:layout_marginTop="14dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:maxLength="60"
+                    android:hint="@string/add_order_adress_hint" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/material_view_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/layout_background" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/is_referral"
+                    style="@style/myTextStyleMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/is_referral_tv" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/referral_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="10dp"
+                    android:minWidth="30dp"
+                    android:textOff="否"
+                    android:textOn="是"
+                    app:showText="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/referral_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/material_view_color" />
+
+                <include
+                    android:id="@+id/referral_name_layout"
+                    layout="@layout/layout_left_text_right_input" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/material_view_color" />
+
+                <include
+                    android:id="@+id/referral_phone_layout"
+                    layout="@layout/layout_left_text_right_input" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/material_view_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/layout_background" />
+
+
+            <include
+                android:id="@+id/add_order_store"
+                layout="@layout/scent_item_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/material_view_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/layout_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+
+                <TextView
+                    style="@style/myTextStyleMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_order_demand_tv" />
+
+                <EditText
+                    android:id="@+id/add_demand_edit"
+                    style="@style/myTextStyleVice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@null"
+                    android:maxLength="60"
+                    android:gravity="left"
+                    android:hint="@string/add_order_demand_hint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/material_view_color" />
+        </LinearLayout>
+    </com.li.test.view.MyScrollView>
+</LinearLayout>
